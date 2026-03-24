@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atelier | La Maison Mirage</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@200;400&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --white: #ffffff;
+            --black: #0a0a0a;
+            --grey: #f8f8f8;
+            --gold: #c5a059;
+        }
+
+        body {
+            margin: 0;
+            background-color: var(--white);
+            color: var(--black);
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        header {
+            padding: 80px 20px;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            margin: 0;
+        }
+
+        /* IL TUO BOTTONE AGGIORNATO */
+        .back-link {
+            text-decoration: none;
+            color: var(--black);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            display: inline-block;
+            margin-bottom: 30px;
+            border: 1px solid var(--black);
+            padding: 10px 20px;
+            /* Spaziatura più ampia */
+            transition: all 0.4s ease;
+        }
+
+        .back-link:hover {
+            background: var(--black);
+            color: var(--white);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            border-bottom: 2px solid var(--black);
+            display: inline-block;
+            margin: 60px 0 40px;
+            padding-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        .role-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .role-card {
+            border-left: 1px solid #ddd;
+            padding-left: 20px;
+        }
+
+        .role-name {
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .poetic-desc {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 0.95rem;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .slots {
+            font-size: 0.75rem;
+            background: var(--grey);
+            padding: 2px 8px;
+            border-radius: 10px;
+        }
+
+        .ic-badge {
+            font-size: 0.7rem;
+            color: var(--gold);
+            text-transform: uppercase;
+            border: 1px solid var(--gold);
+            padding: 2px 8px;
+            display: inline-block;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        .ic-badgevoid {
+            font-size: 0.7rem;
+
+            text-transform: uppercase;
+            border: none;
+            padding: 2px 8px;
+            display: inline-block;
+            margin-bottom: 24px;
+            letter-spacing: 1px;
+        }
+
+        .occupants {
+            font-size: 0.85rem;
+            color: var(--gold);
+            list-style: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        .occupants li::before {
+            content: "— ";
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="back-link">← Torna al Portale</a>
+        <h1>L'Atelier</h1>
+        <p style="font-style: italic; opacity: 0.6; margin-top: 20px;">L'anima della Maison dove il filo diventa
+            destino.</p>
+    </header>
+
+    <div class="container">
+        <h2 class="section-title">Lato Sartoria</h2>
+        <div class="role-grid">
+            <div class="role-card">
+                <div class="role-name">Stilisti <span class="slots">ꝏ</span></div>
+                <div class="ic-badgevoid"></div>
+                <p class="poetic-desc">"Visionari che disegnano l'invisibile sui confini del corpo."</p>
+                <ul class="occupants">
+                    <li>Noah Molchanov (BTS - Jungkook)</li>
+                </ul>
+            </div>
+            <div class="role-card">
+                <div class="role-name">Sarti <span class="slots">ꝏ</span></div>
+                <div class="ic-badgevoid"></div>
+                <p class="poetic-desc">"Mani sapienti che domano la stoffa con la precisione di un battito."</p>
+                <ul class="occupants">
+                    <li>Noah Molchanov (BTS - Jungkook)</li>
+                </ul>
+            </div>
+            <div class="role-card">
+                <div class="role-name">Modelli <span class="slots">ꝏ</span></div>
+                <div class="ic-badge">Disponibile anche per PG IC</div>
+                <p class="poetic-desc">"Tele viventi che portano l'arte nel mondo attraverso il movimento."</p>
+                <ul class="occupants">
+                    <li>Cornelia (Kim Goeun)</li>
+                    <li>Jordan Lee (BTS - Jimin)</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2 class="section-title">Il Negozio</h2>
+        <div class="role-grid">
+            <div class="role-card">
+                <div class="role-name">Commessi <span class="slots">0/6</span></div>
+                <p class="poetic-desc">"Ciceroni del lusso, guide tra i corridoi del desiderio."</p>
+            </div>
+            <div class="role-card">
+                <div class="role-name">Designer d’interni <span class="slots">0/2</span></div>
+                <p class="poetic-desc">"Scultori dello spazio che rendono ogni stanza un'emozione."</p>
+            </div>
+            <div class="role-card">
+                <div class="role-name">Exhibit Experts <span class="slots">0/2</span></div>
+                <p class="poetic-desc">"Curatori di sguardi, maestri nel mettere in scena l'eleganza."</p>
+            </div>
+        </div>
+
+        <h2 class="section-title">Le Sfilate</h2>
+        <div class="role-grid">
+            <div class="role-card">
+                <div class="role-name">Consulenti d’immagine <span class="slots">0/3</span></div>
+                <p class="poetic-desc">"Architetti dell'identità, estrattori dell'essenza altrui."</p>
+            </div>
+            <div class="role-card">
+                <div class="role-name">Make Up Artists <span class="slots">0/5</span></div>
+                <p class="poetic-desc">"Pittori di volti che usano il colore per svelare verità celate."</p>
+            </div>
+            <div class="role-card">
+                <div class="role-name">Direttori Artistici <span class="slots">1/2</span></div>
+                <p class="poetic-desc">"I registi del sogno, l'occhio che tutto armonizza."</p>
+                <ul class="occupants">
+                    <li>Noah Molchanov (BTS - Jungkook)</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2 class="section-title">Oltre il Velame</h2>
+        <div class="role-grid">
+            <div class="role-card">
+                <div class="role-name">Ambassadors <span class="slots">ꝏ</span></div>
+                <div class="ic-badge">Disponibile anche per PG IC</div>
+                <p class="poetic-desc">"Voci nel vento che portano il nome della Maison oltre l'orizzonte."</p>
+            </div>
+            <div class="role-card">
+                <div class="role-name">Clienti <span class="slots">ꝏ</span></div>
+                <div class="ic-badge">Disponibile anche per PG IC</div>
+                <p class="poetic-desc">"Il cuore pulsante, coloro per cui ogni filo trova la sua strada."</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
