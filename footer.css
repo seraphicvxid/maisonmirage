@@ -1,0 +1,28 @@
+.site-footer {
+    text-align: center;
+    padding: 50px 20px 30px;
+    margin-top: 40px;
+    border-top: 1px solid var(--gold);
+}
+
+.footer-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+    /* Su sfondi scuri o chiari prende il colore di default del body */
+}
+
+.social-link {
+    color: var(--gold);
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    font-style: italic;
+    transition: opacity 0.4s ease;
+}
+
+.social-link:hover {
+    opacity: 0.6;
+}

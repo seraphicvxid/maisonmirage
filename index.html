@@ -8,179 +8,36 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@200;400&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
     <style>
-        :root {
-            --white: #ffffff;
-            --black: #0a0a0a;
-            --gold: #c5a059;
-            --transition: all 0.8s cubic-bezier(0.77, 0, 0.175, 1);
-        }
-
-        body,
-        html {
-            margin: 0;
-            padding: 0;
-            font-family: 'Montserrat', sans-serif;
-            overflow-x: hidden;
-            background-color: var(--black);
-        }
-
-        .split-container {
-            display: flex;
-            height: 100vh;
-            width: 100vw;
-            overflow: hidden;
-        }
-
-        .side {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 40px;
+        .site-footer {
             text-align: center;
-            transition: var(--transition);
-            position: relative;
-            cursor: pointer;
-            text-decoration: none;
-        }
-
-        .day {
-            background-color: var(--white);
-            color: var(--black);
-        }
-
-        .day:hover {
-            flex: 1.5;
-        }
-
-        .night {
-            background-color: var(--black);
-            color: var(--white);
-            border-left: 1px solid #222;
-        }
-
-        .night:hover {
-            flex: 1.5;
-        }
-
-        .icon {
-            font-size: 3rem;
-            margin-bottom: 20px;
-            transition: transform 0.5s ease;
-        }
-
-        .side:hover .icon {
-            transform: scale(1.2) rotate(10deg);
-        }
-
-        h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.5rem;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-        }
-
-        .poetic-text {
-            max-width: 400px;
-            line-height: 1.8;
-            font-style: italic;
-            opacity: 0;
-            transform: translateY(20px);
-            transition: var(--transition);
-        }
-
-        .side:hover .poetic-text {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .final-quote {
-            height: 60vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: linear-gradient(to bottom, #0a0a0a, #1a1a1a);
-            color: var(--white);
-            padding: 20px;
-        }
-
-        .quote-text {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.8rem;
-            text-align: center;
-            max-width: 800px;
+            padding: 50px 20px 30px;
+            margin-top: 40px;
             border-top: 1px solid var(--gold);
-            border-bottom: 1px solid var(--gold);
-            padding: 40px 20px;
-            line-height: 1.5;
         }
 
-        @media (max-width: 768px) {
-            .split-container {
-                flex-direction: column;
-            }
-
-            .side:hover {
-                flex: 1;
-            }
-
-            h1 {
-                font-size: 1.8rem;
-            }
-        }
-
-        .rules-section {
-            padding: 100px 20px;
-            background-color: #0d0d0d;
-            color: var(--white);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            border-top: 1px solid #222;
-        }
-
-        .rules-container {
-            max-width: 800px;
-            width: 100%;
-        }
-
-        .rules-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.5rem;
-            color: var(--gold);
-            text-align: center;
-            margin-bottom: 50px;
+        .footer-text {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.75rem;
             text-transform: uppercase;
-            letter-spacing: 4px;
-        }
-
-        .rule-item {
-            margin-bottom: 40px;
-            padding-left: 30px;
-            border-left: 1px solid var(--gold);
-            position: relative;
-        }
-
-        .rule-number {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.5rem;
-            color: var(--gold);
-            margin-bottom: 10px;
-            display: block;
-        }
-
-        .rule-text {
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: #ccc;
-            letter-spacing: 0.5px;
-        }
-
-        .rule-highlight {
+            letter-spacing: 3px;
+            margin-bottom: 15px;
             color: var(--white);
-            font-weight: 400;
+            /* Su sfondi scuri o chiari prende il colore di default del body */
+        }
+
+        .social-link {
+            color: var(--gold);
+            text-decoration: none;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            font-style: italic;
+            transition: opacity 0.4s ease;
+        }
+
+        .social-link:hover {
+            opacity: 0.6;
         }
     </style>
 </head>
@@ -189,13 +46,13 @@
     <div class="split-container">
         <a href="atelier.html" class="side day">
             <div class="icon">☀️</div>
-            <h1>L'Atelier</h1>
+            <h1>Maison Mirage</h1>
             <p class="poetic-text">"Dove il filo diventa destino e la luce scolpisce l'eleganza. Entra nel tempio della
                 creazione."</p>
         </a>
         <a href="lounge.html" class="side night">
             <div class="icon">🌙</div>
-            <h1>The Lounge</h1>
+            <h1>Mirage's Lounge Bar</h1>
             <p class="poetic-text">"Quando il sole tramonta, l'anima si svela tra vapori di cristallo e ombre di
                 velluto. Immergiti nel mistero."</p>
         </a>
@@ -244,6 +101,14 @@
             </div>
         </div>
     </section>
+
+
+    <footer class="site-footer">
+        <p class="footer-text">La Maison Mirage &copy; 2026</p>
+        <a href="https://www.facebook.com/share/18HmJnNDs8" target="_blank" class="social-link">
+            Visita la nostra pagina Facebook
+        </a>
+    </footer>
 
 </body>
 

@@ -8,150 +8,14 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@200;400&display=swap"
         rel="stylesheet">
-    <style>
-        :root {
-            --white: #ffffff;
-            --black: #0a0a0a;
-            --grey: #1a1a1a;
-            --gold: #c5a059;
-        }
-
-        body {
-            margin: 0;
-            background-color: var(--black);
-            color: var(--white);
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        header {
-            padding: 80px 20px;
-            text-align: center;
-            border-bottom: 1px solid #222;
-        }
-
-        h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 3rem;
-            text-transform: uppercase;
-            letter-spacing: 5px;
-            margin: 0;
-            color: var(--gold);
-        }
-
-        /* IL TUO BOTTONE PREFERITO */
-        .back-link {
-            text-decoration: none;
-            color: var(--white);
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            display: inline-block;
-            margin-bottom: 30px;
-            border: 1px solid var(--white);
-            padding: 10px 20px;
-            transition: all 0.4s ease;
-        }
-
-        .back-link:hover {
-            background: var(--white);
-            color: var(--black);
-        }
-
-        .disclaimer-box {
-            max-width: 600px;
-            margin: 20px auto 0;
-            border: 1px solid var(--gold);
-            padding: 10px;
-            font-size: 0.7rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: var(--gold);
-        }
-
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 60px 20px;
-        }
-
-        .section-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.8rem;
-            border-bottom: 2px solid var(--gold);
-            display: inline-block;
-            margin: 60px 0 40px;
-            padding-bottom: 5px;
-            text-transform: uppercase;
-            color: var(--gold);
-        }
-
-        .role-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
-        }
-
-        .role-card {
-            border-left: 1px solid #333;
-            padding-left: 20px;
-        }
-
-        .role-name {
-            font-weight: 400;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            font-size: 1.1rem;
-            margin-bottom: 5px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .poetic-desc {
-            font-family: 'Playfair Display', serif;
-            font-style: italic;
-            font-size: 0.95rem;
-            color: #aaa;
-            margin-bottom: 10px;
-        }
-
-        .slots {
-            font-size: 0.75rem;
-            background: var(--grey);
-            color: var(--white);
-            padding: 2px 8px;
-            border-radius: 10px;
-        }
-
-        .ic-badge {
-            font-size: 0.7rem;
-            color: var(--gold);
-            text-transform: uppercase;
-            border: 1px solid var(--gold);
-            padding: 2px 8px;
-            display: inline-block;
-            margin-bottom: 10px;
-            letter-spacing: 1px;
-        }
-
-        .occupants {
-            font-size: 0.85rem;
-            color: var(--gold);
-            list-style: none;
-            padding: 0;
-            margin-top: 10px;
-        }
-
-        .occupants li::before {
-            content: "— ";
-        }
-    </style>
+    <link rel="stylesheet" href="lounge.css">
+    <link rel="stylesheet" href="footer.css">
 </head>
 
 <body>
     <header>
         <a href="index.html" class="back-link">← Torna al Portale</a>
-        <h1> Mirage's Lounge</h1>
+        <h1>Mirage's Lounge</h1>
         <p style="font-style: italic; opacity: 0.6; margin-top: 20px;">L'essenza è fluida: ogni anima può abitare
             simultaneamente la luce dell'Atelier e il mistero della Lounge. </p>
         <p style="font-style: italic; opacity: 0.6; margin-top: 20px;">I ruoli sono indipendenti da quelli della Maison
@@ -173,45 +37,72 @@
             <div class="role-card">
                 <div class="role-name">Barman <span class="slots">0/3</span></div>
                 <p class="poetic-desc">"Alchimisti della notte che trasformano il ghiaccio in oro liquido."</p>
+                <ul class="occupants">
+                    <!--<li></li>-->
+                </ul>
             </div>
             <div class="role-card">
                 <div class="role-name">Camerieri <span class="slots">0/3</span></div>
                 <p class="poetic-desc">"Ombre eleganti che scivolano tra i tavoli con grazia estrema."</p>
+                <ul class="occupants">
+                    <!--<li></li>-->
+                </ul>
             </div>
             <div class="role-card">
                 <div class="role-name">Sommelier <span class="slots">0/2</span></div>
                 <p class="poetic-desc">"Poeti della vite che leggono la storia di una vita in un sorso d'annata."</p>
+                <ul class="occupants">
+                    <!--<li></li>-->
+                </ul>
             </div>
         </div>
 
         <h2 class="section-title">Sensory Alchemy</h2>
         <div class="role-grid">
             <div class="role-card">
-                <div class="role-name">Musicisti <span class="slots">&infin</span></div>
+                <div class="role-name">Musicisti <span class="slots">&infin;</span></div>
                 <div class="ic-badge">Possibilità di Band / Ensemble</div>
                 <p class="poetic-desc">"Coloro che pizzicano le corde dell'anima nel silenzio del mondo."</p>
+                <ul class="occupants">
+                    <!--<li></li>-->
+                </ul>
             </div>
             <div class="role-card">
-                <div class="role-name">Cantanti <span class="slots">&infin</span></div>
-                 <ul class="occupants">
-                    <li>Noah Molchanov (BTS - Jungkook)</li>
+                <div class="role-name">Cantanti <span class="slots">&infin;</span></div>
                 <div class="ic-badge">Possibilità di Gruppi Vocali</div>
                 <p class="poetic-desc">"Sirene che incantano il buio con la sola forza del respiro."</p>
+                <ul class="occupants">
+                    <li>Lycoris Woo (ATEEZ - Jung Wooyoung) [ic]</li>
+                    <li>Khalid Frederik (BTS - Min Yoongi) </li>
+                </ul>
             </div>
         </div>
 
         <h2 class="section-title">Special Guests</h2>
         <div class="role-grid">
             <div class="role-card">
-                <div class="role-name">Guest Star <span class="slots">&infin</span></div>
-                <!-- <div class="ic-badge">Disponibile anche per PG IC</div>-->
+                <div class="role-name">Guest Star <span class="slots">&infin;</span></div>
+                <div class="ic-badge">Disponibile anche per PG IC</div>
                 <p class="poetic-desc">"Ogni settimana La Maison Mirage ospita serate di rilievo tra icone famosissime e
                     artisti emergenti. Il ruolo di Guest è riservato non solo ad Anime Originali (OC) ma anche a Volti
                     Noti (IC)"</p>
+                <ul class="occupants">
+                    <!--<li></li>-->
+                </ul>
             </div>
         </div>
 
     </div>
+
+
+
+    <footer class="site-footer">
+        <p class="footer-text">La Maison Mirage &copy; 2026</p>
+        <a href="https://www.facebook.com/share/18HmJnNDs8" target="_blank" class="social-link">
+            Visita la nostra pagina Facebook
+        </a>
+    </footer>
+
 </body>
 
 </html>
